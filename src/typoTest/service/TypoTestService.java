@@ -1,4 +1,4 @@
-package typoTest;
+package typoTest.service;
 
 import java.util.Map;
 
@@ -9,4 +9,6 @@ public interface TypoTestService {
     String correctWord(String word, Map<String, Integer> freqMap, double alpha, double beta);
 
     int getEditDistance(String s1, String s2);
+
+    int getSmartEditDistance(String s1, String s2);
 }

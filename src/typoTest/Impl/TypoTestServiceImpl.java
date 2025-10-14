@@ -1,8 +1,10 @@
 package typoTest.Impl;
 
-import typoTest.TypoTestService;
+import typoTest.service.TypoTestService;
 
 import java.util.*;
+
+import static utils.HangulUtils.*;
 
 public class TypoTestServiceImpl implements TypoTestService {
 
@@ -28,7 +30,7 @@ public class TypoTestServiceImpl implements TypoTestService {
         int maxFreq = Collections.max(freqMap.values());
 
         for (String dictWord : dictionary) {
-            int distance = getEditDistance(word, dictWord);
+            int distance = getSmartEditDistance(word, dictWord);
             int frequency = freqMap.get(dictWord);
 
             // 거리 기반 유사도 (0~1)
@@ -71,4 +73,15 @@ public class TypoTestServiceImpl implements TypoTestService {
         }
         return dp[n][m];
     }
+
+    @Override
+    public int getSmartEditDistance(String s1, String s2) {
+        if (containsHangul(s1) || containsHangul(s2)) {
+            s1 = decomposeHangul(s1);
+            s2 = decomposeHangul(s2);
+        }
+
+        return getEditDistance(s1, s2);
+    }
+
 }
