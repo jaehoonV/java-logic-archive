@@ -1,10 +1,9 @@
 package typoTest.Impl;
 
 import typoTest.service.TypoTestService;
+import utils.HangulUtils;
 
 import java.util.*;
-
-import static utils.HangulUtils.*;
 
 public class TypoTestServiceImpl implements TypoTestService {
 
@@ -76,9 +75,9 @@ public class TypoTestServiceImpl implements TypoTestService {
 
     @Override
     public int getSmartEditDistance(String s1, String s2) {
-        if (containsHangul(s1) || containsHangul(s2)) {
-            s1 = decomposeHangul(s1);
-            s2 = decomposeHangul(s2);
+        if (HangulUtils.containsHangul(s1) || HangulUtils.containsHangul(s2)) {
+            s1 = HangulUtils.decomposeHangul(s1);
+            s2 = HangulUtils.decomposeHangul(s2);
         }
 
         return getEditDistance(s1, s2);
