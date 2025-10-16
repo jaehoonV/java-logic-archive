@@ -1,4 +1,4 @@
-package utils;
+package Utils;
 
 public class HangulUtils {
     private static final char HANGUL_BASE = 0xAC00;

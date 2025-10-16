@@ -1,4 +1,4 @@
-package checksum;
+package Checksum;
 
 public enum ChecksumAlgorithm {
     MD5("MD5"),

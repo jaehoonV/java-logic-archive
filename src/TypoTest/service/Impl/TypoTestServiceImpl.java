@@ -1,7 +1,7 @@
-package typoTest.Impl;
+package TypoTest.service.Impl;
 
-import typoTest.service.TypoTestService;
-import utils.HangulUtils;
+import TypoTest.service.TypoTestService;
+import Utils.HangulUtils;
 
 import java.util.*;
 

@@ -1,6 +1,6 @@
-package formatterTest;
+package FormatterTest;
 
-import utils.FormatterUtils;
+import Utils.FormatterUtils;
 
 public class FormatterTestMain {
     public static void main(String[] args) {

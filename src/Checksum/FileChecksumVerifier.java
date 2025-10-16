@@ -1,4 +1,4 @@
-package checksum;
+package Checksum;
 
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;

@@ -1,4 +1,4 @@
-package checksum;
+package Checksum;
 
 import java.io.FileInputStream;
 import java.io.IOException;

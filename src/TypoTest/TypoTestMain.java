@@ -1,8 +1,8 @@
-package typoTest;
+package TypoTest;
 
-import typoTest.Impl.TypoTestServiceImpl;
-import typoTest.service.FreqJsonLoader;
-import typoTest.service.TypoTestService;
+import TypoTest.service.Impl.TypoTestServiceImpl;
+import TypoTest.service.FreqJsonLoader;
+import TypoTest.service.TypoTestService;
 
 import java.util.Map;
 import java.util.Scanner;

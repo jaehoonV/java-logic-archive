@@ -1,4 +1,4 @@
-package typoTest.service;
+package TypoTest.service;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
