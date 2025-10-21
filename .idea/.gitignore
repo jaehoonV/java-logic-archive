@@ -42,7 +42,7 @@ gen/
 classes/
 target/
 build/
-META-INF/
+src/META-INF/
 
 # User-specific stuff
 *.ipr
